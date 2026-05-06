@@ -8,6 +8,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+      strategies: "injectManifest",
+
       manifest: {
         id: "/",
         name: "Jornada Milhas",
@@ -42,23 +44,6 @@ export default defineConfig({
           },
         ],
       },
-      workbox: {
-        runtimeCaching: [
-          {
-            urlPattern: ({ url }) => {
-              return url.pathname.startsWith("/image");
-            },
-            handler: "CacheFirst",
-            options: {
-              cacheName: "runtime-cache",
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-        ],
-      },
-      devOptions: { enabled: true },
     }),
   ],
 });
