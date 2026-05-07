@@ -1,46 +1,41 @@
-![Jornada Milhas](thumb.png)
-
 # Jornada Milhas
 
-Explore o Jornada Milhas: seu guia de viagens para aventuras sem limites! Encontre inspiração, planeje suas jornadas e aproveite ofertas incríveis. Estamos em desenvolvimento e em breve, nossa funcionalidade PWA para acesso rápido em qualquer lugar!
+![Thumbnail do projeto. O título é “Jornada Milhas • Progressive Web App” e o Subtítulo é “adaptado por Bianca Chiquinelli.”](thumb.png)
+
+Aplicação web de viagens desenvolvida com foco em experiência responsiva e evolução para Progressive Web App (PWA), utilizando estratégias de cache e recursos offline para otimizar desempenho e acessibilidade.
 
 ![Imagem da aplicação da Jornada Milhas](jornada-milhas.png)
 
-## 🔨 Funcionalidades do projeto
+## ✨ Funcionalidades
 
-Neste estágio de desenvolvimento, o site possui as seguintes funcionalidades:
+- Exibição de pacotes de viagens em interface responsiva
+- Estrutura preparada para instalação como aplicativo (PWA)
+- Cache estratégico de assets para melhoria de performance
+- Suporte inicial para navegação offline
 
-- Página estática com pacotes de viagens
-- Responsividade para diferentes dispositivos
-- Outras funcionalidades em breve
+## ⚙️ Implementações técnicas
 
-O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/C9Hwa6VpPKLSM6pJVCMZgI/Jornada-Milhas-%7C-React-Service-Workers?type=design&node-id=0-1&mode=design&t=rZNRLbySPNz2Ugjf-0).
+- Configuração de PWA com `VitePWA`
+- Criação e registro manual de `Service Worker`
+- Migração para utilização do `Workbox`
+- Estratégias de cache para imagens e arquivos de estilo
+- Configuração de `manifest.webmanifest`
+- Definição de ícones, metadados e propriedades da aplicação instalável
+- Otimização de carregamento de fontes locais
 
-## ✔️ Técnicas e tecnologias utilizadas
+## 🧩 Tecnologias utilizadas
 
-O projeto utiliza as seguintes tecnologias e bibliotecas:
+- `React`
+- `Vite`
+- `JavaScript`
+- `VitePWA`
+- `Workbox`
 
-- `React` - Framework JavaScript
-- `Vite` - Build tool para desenvolvimento rápido
-- `VitePWA` - Plugin para criação de PWA's em aplicações com vite
-- `Workbox` - Biblioteca para criação e gerenciamento de PWA's
-- `JavaScript` - Linguagem de programação principal
-- `Styled Components` - Ferramenta de estilização do nosso projeto
-- `Figma` - Para prototipagem do projeto
+## Como Ter Acesso ao Projeto
 
-E muito mais...
-
-## 🛠️ Abrir e rodar o projeto
-
-Para executar o projeto em seu ambiente local, siga estas etapas:
-
-1. Certifique-se de ter o Node.js instalado em sua máquina. Nós usamos a versão 20.10.0
-
-2. Baixe o repositório do projeto.
-
-3. Extraia os arquivos para uma pasta de sua preferência.
-
-4. Navegue até a pasta em questão via terminal (cmd):
+- **Versão online**: [Clique aqui](https://jornada-milhas-delta.vercel.app/)
+- **Rodar localmente**:
+  Clone o repositório e instale as dependências:
 
 ```bash
 cd react-pwa
@@ -57,11 +52,3 @@ npm install
 ```bash
 npm run dev
 ```
-
-## 📚 Mais informações do curso
-
-Gostou do projeto e quer conhecer mais?
-
-O design e protótipo deste projeto podem ser encontrados [aqui](https://www.figma.com/file/C9Hwa6VpPKLSM6pJVCMZgI/Jornada-Milhas-%7C-React-Service-Workers?type=design&node-id=0-1&mode=design&t=rZNRLbySPNz2Ugjf-0). 
-
-Aproveite o desenvolvimento e aprimoramento da Jornada Milhas!
