@@ -4,14 +4,15 @@
 
 Aplicação web de viagens desenvolvida com foco em experiência responsiva e evolução para Progressive Web App (PWA), utilizando estratégias de cache e recursos offline para otimizar desempenho e acessibilidade.
 
-![Imagem da aplicação da Jornada Milhas](jornada-milhas.png)
-
 ## ✨ Funcionalidades
 
 - Exibição de pacotes de viagens em interface responsiva
 - Estrutura preparada para instalação como aplicativo (PWA)
 - Cache estratégico de assets para melhoria de performance
 - Suporte inicial para navegação offline
+
+![Imagem da aplicação da Jornada Milhas](jornada-milhas.png)
+
 
 ## ⚙️ Implementações técnicas
 
@@ -41,13 +42,9 @@ Aplicação web de viagens desenvolvida com foco em experiência responsiva e ev
 cd react-pwa
 ```
 
-5. Instale as dependências usando o npm:
-
 ```bash
 npm install
 ```
-
-6. Inicie o projeto localmente:
 
 ```bash
 npm run dev
