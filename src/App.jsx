@@ -4,11 +4,11 @@ import useNotification from "./hooks/useNotification";
 import NotificationButton from "./components/NotificationButton";
 
 function App() {
-  const {} = useNotification();
+  const { sendTestNotification } = useNotification();
   return (
     <>
       <GlobalStyle />
-      <NotificationButton />
+      <NotificationButton action={sendTestNotification} />
       <Home />
     </>
   );
