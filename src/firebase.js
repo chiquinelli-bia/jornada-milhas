@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getMessaging, getToken } from "firebase/messaging/sw";
+import { getMessaging, getToken } from "firebase/messaging";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -14,7 +14,6 @@ const firebaseConfig = {
   appId: "1:808887638818:web:6af09f460f6058853ca37b",
 };
 
-// Initialize Firebase
 initializeApp(firebaseConfig);
 
 const messaging = getMessaging();
