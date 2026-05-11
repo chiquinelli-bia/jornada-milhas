@@ -2,13 +2,14 @@ import GlobalStyle from "./styles/global";
 import Home from "./pages/Home";
 import useNotification from "./hooks/useNotification";
 import NotificationButton from "./components/NotificationButton";
+import { requestToken } from "./firebase";
 
 function App() {
-  const { sendTestNotification } = useNotification();
+  const {} = useNotification();
   return (
     <>
       <GlobalStyle />
-      <NotificationButton action={sendTestNotification} />
+      <NotificationButton action={requestToken} />
       <Home />
     </>
   );
