@@ -1,30 +1,8 @@
-import { useEffect } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const useNotification = () => {
-  const requestNotificationPermission = async () => {
-    const permission = await Notification.requestPermission();
-    if (permission !== "granted") {
-      alert("Permissão negada.");
-    }
-  };
-  const sendNotification = (title, options) => {
-    if (Notification.permission === "granted") {
-      new Notification(title, options);
-    } else {
-      alert("Permissão para notificações não concedida");
-    }
-  };
-  const sendTestNotification = () => {
-    const options = {
-      body: "Notificação teste",
-      icon: "/icon-192x192.png",
-    };
-    sendNotification("Titulo legal", options);
-  };
-  useEffect(() => {
-    requestNotificationPermission();
-  });
-  return { sendTestNotification };
+const useFirebaseNotification = () => {
+  return {};
 };
 
-export default useNotification;
+export default useFirebaseNotification;
