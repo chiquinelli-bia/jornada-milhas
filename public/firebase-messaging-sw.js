@@ -5,12 +5,12 @@ importScripts(
 );
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBNKd-6yytJdYIsIUJ-snCBhtW9UjW2SrQ",
-  authDomain: "jornada-milhas-5e978.firebaseapp.com",
-  projectId: "jornada-milhas-5e978",
-  storageBucket: "jornada-milhas-5e978.appspot.com",
-  messagingSenderId: "136000404056",
-  appId: "1:136000404056:web:618801f68d228e71faa82d",
+  apiKey: "AIzaSyC_gUfdkuhjlEBPyh6-DyEjcKsWcZq0lgc",
+  authDomain: "jornada-milhas-a0dd6.firebaseapp.com",
+  projectId: "jornada-milhas-a0dd6",
+  storageBucket: "jornada-milhas-a0dd6.firebasestorage.app",
+  messagingSenderId: "808887638818",
+  appId: "1:808887638818:web:6af09f460f6058853ca37b",
 };
 
 firebase.initializeApp(firebaseConfig);
