@@ -4,8 +4,11 @@ import * as Styled from "./style";
 const ToastDisplay = ({ notification }) => {
   return (
     <Styled.Container>
-      <Styled.Title>{notification.title}</Styled.Title>
-      <Styled.Body>{notification.body}</Styled.Body>
+      <Styled.Icon src="./icon-192x192.png" alt="Logo Jornada Milhas" />
+      <Styled.Content>
+        <Styled.Title>{notification.title}</Styled.Title>
+        <Styled.Body>{notification.body}</Styled.Body>
+      </Styled.Content>
     </Styled.Container>
   );
 };

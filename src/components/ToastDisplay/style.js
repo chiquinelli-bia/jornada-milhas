@@ -1,11 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 16px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+export const Icon = styled.img`
+  width: 40px;
+  height: 40px;
+`;
+
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+  gap: 4px;
 `;
 
 export const Title = styled.h3`
