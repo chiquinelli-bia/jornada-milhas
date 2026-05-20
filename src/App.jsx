@@ -1,5 +1,7 @@
-import GlobalStyle from "./styles/global";
-import Home from "./pages/Home";
+//ver o pq do botão de card promo n pegar e commitar tudo sobre componentes
+import Header from "./components/Header";
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 import NotificationButton from "./components/NotificationButton";
 import { requestToken } from "./firebase";
 import { ToastContainer } from "react-toastify";
@@ -22,11 +24,11 @@ function App() {
   useFirebaseNotification();
   return (
     <>
-      <GlobalStyle />
+      <Header />
       <StyledToastContainer />
-
       <NotificationButton action={requestToken} />
-      <Home />
+      <Outlet />
+      <Footer />
     </>
   );
 }
