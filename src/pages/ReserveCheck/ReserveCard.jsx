@@ -14,13 +14,16 @@ const ReserveCard = ({ card }) => {
       tipo: card.tipo,
     };
     try {
-      const res = await fetch("http://localhost:3000/reservas", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const res = await fetch(
+        "https://6a105526d2a985707036a9b1.mockapi.io/reservas",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(reservationData),
         },
-        body: JSON.stringify(reservationData),
-      });
+      );
       if (!res.ok) {
         throw new Error("Erro ao enviar dados da reserva");
       }
