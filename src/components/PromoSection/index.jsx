@@ -2,7 +2,7 @@
 import CardPromo from "../CardPromo";
 import * as Styled from "./style";
 
-const PromoStyledection = ({ cards }) => {
+const PromoSection = ({ cards }) => {
   return (
     <Styled.Section>
       <Styled.Container>
@@ -18,4 +18,4 @@ const PromoStyledection = ({ cards }) => {
   );
 };
 
-export default PromoStyledection;
+export default PromoSection;
